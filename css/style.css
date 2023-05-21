@@ -1,0 +1,645 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+:root {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../Illustrations/Bathome1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #000;
+    color: white;
+    overflow-x: hidden;
+}
+
+
+/* debut texte */
+
+h1 {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+button {
+    font-family: "Space Grotesk", sans-serif;
+    margin-top: 2px;
+}
+
+.entete,
+.sect-batman1 {
+    width: 100%;
+}
+
+.itembat1>.bloc-p>p {
+    display: inline-block;
+    width: 57%;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    font-size: 24px;
+}
+
+.entete>.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    border-left: 3px solid rgba(255, 255, 255, 0.096);
+    border-right: 3px solid rgba(255, 255, 255, 0.096);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.096);
+    width: 90%;
+    height: 100px;
+}
+
+.entete_item>h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.6rem;
+    color: #fff;
+}
+
+.entete_item {
+    margin-top: 15px;
+}
+
+.item1 {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.item2 {
+    flex-grow: 4;
+}
+
+.item3 {
+    text-align: center;
+    flex-grow: 1;
+}
+
+
+/* fin texte */
+
+
+/* aside */
+
+.aside {
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    left: 50%;
+}
+
+.aside-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: content;
+    flex-direction: column;
+    position: absolute;
+    transform: translate(50%, -50%);
+    right: 0;
+}
+
+.sect-batman1 {
+    width: 100%;
+    text-align: center;
+}
+
+.itembat1,
+.multimedia,
+.bande-annonce {
+    margin: 0 auto;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    border-left: 3px solid rgba(255, 255, 255, 0.096);
+    border-right: 3px solid rgba(255, 255, 255, 0.096);
+    width: 90%;
+}
+
+.sect-batman1>.itembat1>.btn {
+    display: inline-block;
+    vertical-align: baseline;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    width: 200px;
+    height: auto;
+    margin: 12px;
+    padding: 15px;
+}
+
+.entete_item>img:hover,
+.logoAside:hover {
+    filter: brightness(0) saturate(100%) invert(88%) sepia(93%) saturate(1187%) hue-rotate(357deg) brightness(104%) contrast(105%);
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    border: none;
+    background: linear-gradient(-20deg, rgb(180, 28, 28), rgb(255, 240, 240) 130%);
+}
+
+.fleche {
+    margin-top: 120px;
+}
+
+.logo_up_nemessis {
+    position: relative;
+    left: 14%;
+}
+
+.logo_up_nemessis>img {
+    width: 24%;
+    height: auto;
+}
+
+.batcinema {
+    width: 80%;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.batcinema>p {
+    font-size: 25px;
+    text-align: justify;
+    padding-bottom: 25px;
+}
+
+.batcinema>h1 {
+    font-weight: bold;
+    padding-bottom: 15px
+}
+
+.il_st_batman {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 2.5vw;
+    padding-bottom: 14px;
+}
+
+.boite-bat {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.boite-bat>.item-bat {
+    margin: 0px;
+}
+
+
+/* j'utilise 2 boites pour premier boite c'est les zoom que je veux faire après pour les element de coté ne bouge pas quant je fais zoom après */
+
+.boite-bat>.item-bat>.card {
+    padding: 8px;
+    height: auto;
+    margin-bottom: 40px;
+    transition: transform 1s;
+}
+
+.boite-bat>.item-bat>.card>img {
+    width: 100%;
+    height: auto;
+}
+
+.boite-bat>.item-bat>.card>h3 {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.3vw;
+    padding-top: 5px;
+}
+
+.boite-bat>.item-bat>.card:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(0.4);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.container>img {
+    width: 100%;
+}
+
+.multimedia {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item1-multimedia {
+    flex-grow: 1;
+}
+
+.item2-multimedia {
+    display: inline-flex;
+    justify-content: center;
+    flex-grow: 4;
+    width: 55%;
+    height: auto;
+}
+
+.item3-multimedia {
+    flex-grow: 1;
+}
+
+.slide {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: auto;
+    z-index: 1;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+@keyframes fading {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.slide-shown {
+    animation: fading 5s;
+    z-index: 4;
+}
+
+.article {
+    margin: 10px;
+    width: 68;
+    text-align: left;
+}
+
+.article>h1 {
+    font-size: 19px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.article>h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 450;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+.article>h3>span {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    color: #FFFF00;
+}
+
+.article>h2 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    margin-top: 4px;
+}
+
+.article>p {
+    margin-top: 3px;
+}
+
+.slide1 {
+    background-image: linear-gradient(60deg, #c4c4c4, rgb(128, 128, 128));
+}
+
+.slide1>img {
+    width: 30%;
+    width: 30%;
+}
+
+.slide2 {
+    background-color: rgb(0, 156, 39);
+}
+
+.slide3 {
+    background-color: rgb(255, 0, 179);
+}
+
+.video {
+    align-items: center;
+}
+
+.bouton-play {
+    position: relative;
+    top: 370px;
+    z-index: 2;
+}
+
+.bd-annonce {
+    display: none;
+}
+
+.newsletter {
+    background: linear-gradient(to top left, #0f2027, #203a43, #2c5364);
+}
+
+.news-bloc {
+    width: 60%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+form>label {
+    display: block;
+    font-family: "Space Grotesk", sans-serif;
+    margin-top: 15px;
+}
+
+.label2 {
+    font-family: "Space Grotesk", sans-serif;
+    width: 60%;
+    margin-top: 15px;
+}
+
+form>input {
+    display: block;
+    color: #fff;
+    font-family: "Space Grotesk", sans-serif;
+    width: 99%;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    margin-top: 15px;
+}
+
+.label-bd-annonce>.resposive-bd {
+    width: 80%;
+    height: 80%;
+}
+
+.label-bd-annonce {
+    position: relative;
+}
+
+.label-bd-annonce>.play_icon {
+    position: absolute;
+    top: 38%;
+    left: 44.8%;
+    width: 10%;
+    height: auto;
+    /*cursor: pointer;*/
+}
+
+.resposive-bd:hover {
+    box-shadow: 0 0 25px #fff;
+    transition: 1s;
+}
+
+.btn-groupe {
+    margin: 10px;
+    padding: 12px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.btn-groupe>button {
+    width: 150px;
+    height: 40px;
+    border-image: linear-gradient(160deg, hsl(0, 0%, 60%), hsl(198, 80%, 28%)) 1;
+    background-color: transparent;
+    color: white;
+    outline: none;
+}
+
+textarea {
+    font-family: "Space Grotesk", sans-serif;
+    padding-top: 6px;
+    width: 99%;
+    height: 20px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    outline: none;
+    color: #f1f1f1;
+}
+
+form>h1 {
+    font-weight: 800;
+    text-align: center;
+}
+
+form>h3 {
+    font-family: "Space Grotesk", sans-serif;
+    margin-top: 25px;
+}
+
+form>p {
+    margin-top: 20px;
+}
+
+.bloc-confirmer {
+    margin-top: 14px;
+    text-align: center;
+}
+
+.btn-confirmer {
+    background: linear-gradient(to right, hsl(40, 40%, 84%), hsl(356, 60%, 40%));
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+
+/* Style The Dropdown Button */
+
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown-in {
+    position: relative;
+    display: inline-block;
+    width: 99%;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown {
+    margin-top: 30px;
+}
+
+.dropdown-content {
+    font-family: "Space Grotesk", sans-serif;
+    margin-top: 20px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    margin-top: 0px;
+    width: 59.5%;
+}
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+/* section citation */
+
+.bloc-citation {
+    width: 90%;
+    margin: 0 auto;
+    border-left: 3px solid rgba(255, 255, 255, 0.096);
+    border-right: 3px solid rgba(255, 255, 255, 0.096);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sect-citation {
+    width: 50%
+}
+
+.citation {
+    max-width: 80%;
+    text-align: center;
+    display: block;
+}
+
+.item-citation {
+    display: flex;
+    padding: 30px;
+}
+
+.item-citation2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cit2 {
+    margin: 12px;
+    font-size: 12px;
+    text-align: center;
+    width: 200px;
+}
+
+.item-citation3 {
+    justify-content: flex-end;
+}
+
+.nav-footer {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 40px;
+}
+
+.petit-presentation {
+    font-size: 1.2vw;
+    line-height: 20px;
+}
+
+.petit-presentation>img {
+    width: 20px;
+}
+
+.bloc-icon {
+    margin-top: 23px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bloc-icon>div {
+    margin: 12px;
+}
+
+.bloc-icon>div>img {
+    width: 20px;
+    height: 20px;
+}
+
+.nav-footer {
+    width: 90%;
+    margin: 0 auto;
+    border-left: 3px solid rgba(255, 255, 255, 0.096);
+    border-right: 3px solid rgba(255, 255, 255, 0.096);
+}
+
+/*.corp {
+    margin-left: -91000px;
+}*/
+
+.bgclick {
+    background-color: #49a2c9b2;
+    border: solid 1px #70aec9;
+}
+
+@keyframes animeimage {
+    0% {
+        background-color: #49a2c9b2;
+        border: solid 1px #70aec9;
+    }
+}
